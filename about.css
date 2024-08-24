@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --bg-color: #1d1c1b;
+    --text-color: #fff;
+    --main-color: #ea5445;
+    --second-bg-color: #22211f;
+    --other-color: #858585;
+    --second-color: #1a1a1a;
+    --h1-font: 5rem;
+    --h2-font: 3.2rem;
+    --p-font: 1.1rem;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 32px 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+.logo{
+        color: #ff7200;
+        font-size: 30px;
+        font-weight: 800;
+    }
+.navlist{
+        display: flex;
+    }
+.navlist a{
+        display: inline-flex;
+        font-size: var(--p-font);
+        font-weight: 500;
+        color: var(--text-color);
+        margin: 0 30px;
+        transition: all .6s ease;
+    }
+.navlist a:hover{
+        color: var(--other-color);
+        transform: translate(-5px);
+    }
+.nav-right{
+        display: flex;
+        align-items: center;
+    }
+.nav-btn{
+        display: inline-block;
+        padding: 14px 35px;
+        background: #ff7200;
+        color: var(--text-color);
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        border-radius: 30px;
+        border: 2px solid transparent;
+        transition: all .6s ease;
+    }
+.nav-btn:hover{
+        background: transparent;
+        border: 2px solid var(--main-color);
+    }
+.hero{
+        height:  100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+.hero-img img{
+        max-width: 600px;
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+        text-align: center;
+    }
+
+}
+.hero-text h6{
+    font-family: "Caveat", cursive;
+    font-size: var(--h6-font);
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: -1px -1px 0px #000, 7px 7px opx #000, 9px 9px 0px #00000055;
+}
+.hero-text h6 span{
+    color: #000);
